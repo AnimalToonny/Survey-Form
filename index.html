@@ -1,45 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
 <body>
-<h1 id="title">Survey Form</h1>
-<p id="description"></p>
-<form id="survey-form">
-    <label for="name" id="name-label"><input id="name" type="text" placeholder="name"></label>
-    <label for="email" id="email-label"><input id="email" type="email" placeholder="email"></label>
-    <label for="number" id="number-label"><input id="number" type="number" min="13" max="120" placeholder="age"></label>
-    <div>
-        <label for="dropdown"></label><select id="dropdown">
-            <option value="0">0</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-        </select>
-    </div>
-    <div>
-        <label for="I'm furry">
-            <input  id="I'm furry" type="radio" name="furry" checked />I'm furry
-        </label>
-        <label for="I'm not furry">
-            <input  id="I'm not furry" type="radio" name="furry" />I'm not furry
-        </label>
-    </div>
-    <div>
-        <label>
-            <input type="checkbox" name="checkbox" value="0"/>
-        </label>
-        <label>
-            <input type="checkbox" name="checkbox" value="1"/>
-        </label>
-        <label>
-            <input type="checkbox" name="checkbox" value="2"/>
-        </label>
-        <label>
-            <input type="checkbox" name="checkbox" value="3"/>
-        </label>
-    </div>
-</form>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Lorem ipsum dolor sit amet</p>
+    <form id="survey-form">
+        <label for="name" id="name-label"><input id="name" type="text" placeholder="name"></label>
+        <label for="email" id="email-label"><input id="email" type="email" placeholder="email"></label>
+        <label for="number" id="number-label"><input id="number" type="number" min="13" max="120" placeholder="age"></label>
+        <div>
+            <label for="dropdown"></label>
+            <select id="dropdown">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+            </select>
+        </div>
+        <div>
+            <label for="Imfurry">
+                <input  id="Imfurry" type="radio" name="furry" checked />I'm furry
+            </label>
+            <label for="Imnotfurry">
+                <input  id="Imnotfurry" type="radio" name="furry" />I'm not furry
+            </label>
+        </div>
+        <div>
+            <label>
+                AAA?
+                <input type="checkbox" name="checkbox" value="0"/>
+            </label>
+            <label>
+                BBB?
+                <input type="checkbox" name="checkbox" value="1"/>
+            </label>
+            <label>
+                CCC?
+                <input type="checkbox" name="checkbox" value="2"/>
+            </label>
+            <label>
+                DDD?
+                <input type="checkbox" name="checkbox" value="3"/>
+            </label>
+        </div>
+        <div>
+            <label>
+                <textarea id="textarea" placeholder="Comments"></textarea>
+            </label>
+        </div>
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+    </form>
 </body>
 </html>

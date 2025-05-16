@@ -6,21 +6,32 @@
     <title>Title</title>
 </head>
 <body>
-    <h1 id="title">Survey Form</h1>
-    <p id="description">Lorem ipsum dolor sit amet</p>
-    <form id="survey-form">
-        <label for="name" id="name-label"><input id="name" type="text" placeholder="name"></label>
-        <label for="email" id="email-label"><input id="email" type="email" placeholder="email"></label>
-        <label for="number" id="number-label"><input id="number" type="number" min="13" max="120" placeholder="age"></label>
+    <div class="title">
+        <h1 id="title">Survey Form</h1>
+        <p id="description" class="description">for the furriest</p>
+    </div>
+    <form id="survey-form" class="form">
         <div>
-            <label for="dropdown"></label>
-            <select id="dropdown">
-                <option value="0">0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-            </select>
+            <label for="name" id="name-label">
+                <input id="name" type="text" placeholder="name" required>
+            </label>
+            <label for="email" id="email-label">
+                <input id="email" type="email" placeholder="email" required>
+            </label>
+            <label for="number" id="number-label">
+                <input id="number" type="number" min="13" max="120" placeholder="age" required>
+            </label>
         </div>
         <div>
+            <label id="dropdowndescription" for="dropdown" class="hidden">your gender</label>
+            <select id="dropdown" class="dropdown">
+                <option value="" disabled selected hidden>Please choose your destiny</option>
+                <option value="0">Male</option>
+                <option value="1">Female</option>
+                <option value="2">Other</option>
+            </select>
+        </div>
+        <div class="radiofurry">
             <label for="Imfurry">
                 <input  id="Imfurry" type="radio" name="furry" checked />I'm furry
             </label>
@@ -28,22 +39,19 @@
                 <input  id="Imnotfurry" type="radio" name="furry" />I'm not furry
             </label>
         </div>
-        <div>
-            <label>
-                AAA?
+        <p id="checkboxname" class="checkboxname">what primary colors do you like?</p>
+        <div class="checkboxcolor">
+            <label class="checkboxdescription">
+                red
                 <input type="checkbox" name="checkbox" value="0"/>
             </label>
-            <label>
-                BBB?
+            <label  class="checkboxdescription">
+                green
                 <input type="checkbox" name="checkbox" value="1"/>
             </label>
-            <label>
-                CCC?
+            <label  class="checkboxdescription">
+                blue
                 <input type="checkbox" name="checkbox" value="2"/>
-            </label>
-            <label>
-                DDD?
-                <input type="checkbox" name="checkbox" value="3"/>
             </label>
         </div>
         <div>
